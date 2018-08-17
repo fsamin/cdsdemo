@@ -9,3 +9,7 @@ workflow:
   build2:
     pipeline: build2
     application: demoapp
+hooks:
+  build:
+    - type: RepositoryWebHook
+      ref: "1532346287"
