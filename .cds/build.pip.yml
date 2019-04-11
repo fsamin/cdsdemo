@@ -1,8 +1,11 @@
 version: v1.0
 name: build
+parameters:
+  param1:
+    type: string
+    default: foo
 jobs:
 - job: New Job
-  stage: Stage 1
   steps:
   - checkout: '{{.cds.workspace}}'
   - script:
