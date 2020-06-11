@@ -1,0 +1,6 @@
+version: v1.0
+name: app
+vcs_server: github
+repo: fsamin/cdsdemo
+vcs_connection_type: ssh
+vcs_ssh_key: proj-ssh-fsamin
