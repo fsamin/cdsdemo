@@ -1,7 +1,0 @@
-version: v1.0
-name: build2
-jobs:
-- job: New Job
-  steps:
-  - script:
-    - echo coucou

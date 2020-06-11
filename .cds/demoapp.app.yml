@@ -1,7 +1,0 @@
-version: v1.0
-name: demoapp
-vcs_server: github
-repo: fsamin/cdsdemo
-variables:
-  myvar:
-    value: myvar2
