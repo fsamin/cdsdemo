@@ -3,7 +3,8 @@ name: test-cmd
 jobs:
 - job: New Job
   steps:
-  - script:
+  - name: Script
+    script:
     - cat << EOF > file.txt
     - '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Audio equidem philosophi
       vocem, Epicure, sed quid tibi dicendum sit oblitus es. Ex ea difficultate illae
@@ -81,3 +82,13 @@ jobs:
     - echo "2"
     - echo "3"
     - echo "4"
+  - name: Script
+    script:
+    - '#!/bin/perl'
+    - ""
+    - my $compteur = 10000000;
+    - ' '
+    - while ($compteur > 0) {
+    - '  print "A"x$compteur; print "\n";'
+    - '  $compteur -= 1;'
+    - '}'
