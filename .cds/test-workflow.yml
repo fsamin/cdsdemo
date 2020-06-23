@@ -4,19 +4,6 @@ workflow:
   test-cmd:
     pipeline: test-cmd
     application: app
-    payload:
-      git.author: ""
-      git.branch: master
-      git.hash: ""
-      git.hash.before: ""
-      git.message: ""
-      git.repository: fsamin/cdsdemo
-      git.tag: ""
-hooks:
-  test-cmd:
-  - type: RepositoryWebHook
-    config:
-      eventFilter: push;check_run;check_suite;commit_comment
 metadata:
   default_tags: git.branch,git.author
 notifications:
